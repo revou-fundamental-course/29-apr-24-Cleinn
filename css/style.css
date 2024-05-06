@@ -51,7 +51,7 @@
     width: 2000px;
     margin: 19px;
     margin-right: 130px;
-    margin-left: 100px;
+    margin-left: 400px;
 }
 
 .item-core2 {
@@ -59,7 +59,7 @@
     height: 500px;
     width: 100%;
     margin: 18px;
-    margin-right: 100px;
+    margin-right: 400px;
 }
 
 .item-head {
@@ -68,17 +68,23 @@
 
 .item-input {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .item-input>input {
     height: 30px;
-    width: 315px;
-    margin-bottom: 50px;
+    width: 200px;
 }
 
 .item-head>p {
     text-align: left;
     margin-left: 20px;
     margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+#error-text {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
