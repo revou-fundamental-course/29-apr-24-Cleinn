@@ -1,1 +1,84 @@
-/*Ini css */
+.Navigation {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+}
+
+.Navigation>nav>button {
+    height: 32px;
+    width: 100px;
+    border: 1px solid;
+    background-color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: left;
+}
+
+.Navigation>nav>button:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.Navigation>nav>button:not(:last-child) {
+    border-right: none;
+}
+
+
+.Navigation>nav>button:hover {
+    background-color: gray;
+}
+
+.Navigation>nav>button:active {
+    background-color: rgb(58, 58, 58);
+}
+
+.Word>header {
+    text-align: center;
+    font-family: monospace;
+}
+
+.Items {
+    display: flex;
+}
+
+.item-core {
+    border: 1px solid;
+    height: 300px;
+    width: 2000px;
+    margin: 19px;
+    margin-right: 130px;
+    margin-left: 100px;
+}
+
+.item-core2 {
+    border: 1px solid;
+    height: 500px;
+    width: 100%;
+    margin: 18px;
+    margin-right: 100px;
+}
+
+.item-head {
+    text-align: center;
+}
+
+.item-input {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.item-input>input {
+    height: 30px;
+    width: 315px;
+    margin-bottom: 50px;
+}
+
+.item-head>p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
