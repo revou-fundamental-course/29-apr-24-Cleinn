@@ -6,7 +6,4 @@ document.getElementById('send').addEventListener("click", function() {
     if (nama == "") {
         document.getElementById('error-text').innerHTML = "aa"
     }
-    else {
-        document.getElementById('error-text').innerHTML = "bb"
-    }
 })
