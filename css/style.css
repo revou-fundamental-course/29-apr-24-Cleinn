@@ -65,6 +65,50 @@
     border-radius: 8px;
 }
 
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 23px;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+}
+
+@keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
 .item-core2 {
     border: 0px solid;
     height: 500px;
@@ -90,7 +134,7 @@
     width: 290px;
     margin-left: 50px;
     border-radius: 5px;
-    border-color: #a2a8c3;
+    border: 1px solid #a2a8c3;
 }
 
 .item-head>p {
@@ -100,7 +144,7 @@
     color: #636e9c;
 }
 
-#error-text {
+#error-text, #error-text2, #error-text3 {
     font-size: 12px;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -111,7 +155,107 @@
     margin-left: 50px;
 }
 
+.option {
+    margin-left: 50px;
+    height: 30px;
+    width: 150px;
+    border-color: #a2a8c3;
+    border-radius: 5px;
+}
+
 .profile {
     display: flex;
+}
+
+.profile2 {
+    margin-left: 300px;
+}
+
+.Florence {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 14px;
+    margin-left: 15px;
+    line-height: 8px;
+}
+
+.reason {
+    display: flex;
+}
+
+.num {
+    border: 1px solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.reason-p {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.reason-main {
+    margin-left: 200px;
+}
+
+.package {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e3e5f098;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.country {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.country>div {
+    margin-bottom: 50px;
+}
+
+.country2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.web-footer {
+    text-align: center;
+}
+
+.hr {
+    margin-bottom: 50px;
+}
+
+.logo-foot, .term, .copyright {
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.copyright {
+    line-height: 0px;
+}
+
+.logo-foot {
+    margin-bottom: 5px;
+}
+
+.last-footer {
+    margin: 30px;   
 }
 

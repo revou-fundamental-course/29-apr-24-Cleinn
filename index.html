@@ -10,21 +10,34 @@
     <header class="Navigation">
         <div>Logo</div>
         <nav>
-            <button>Home</button>
-            <button>Our Package</button>
-            <button>Call Us</button>
+            <button onclick="scrollToSection('home')">Home</button>
+            <button onclick="scrollToSection('article')">Our Package</button>
+            <button onclick="scrollToSection('foot')">Call Us</button>
         </nav>
     </header>
     <hr/>
     
-    <article class="Word">
+    <article id= "home" class="Word">
         <header>
             <h1>Your Very Trusted Travel Agent</h1>
             <p>Your happiness is our happiness</p>
         </header>
 
         <section class="Items">
-            <div class="item-core"></div>
+            <div class="item-core">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="assets/Bali.jpg" alt="Image 1">
+                        <img class="slide" src="assets/Japan.jpg" alt="Image 2">
+                        <img class="slide" src="assets/Singapore.jpg" alt="Image 3">
+                        <img class="slide" src="assets/Bandung.jpg" alt=" Image 4">
+                        <img class="slide" src="assets/Surabaya.jpg" alt="Image 5">
+                        <img class="slide" src="assets/Korea.jpg" alt="Image 6">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
+                </div>
+            </div>
             <div class="item-core2">
                 <header class="item-head">
                     <h2>Contact Us</h2>
@@ -33,10 +46,19 @@
                 <section class="item-input">
                     <label for="">Your Name: </label><br><input type="text" placeholder="First and Last Name" id="input-name"><br>
                     <p id="error-text"></p>
-                    <label for="">Email Address: </label><br><input type="text" placeholder="example@email.com" id="input-email"><br>
-                    <p id="error-text"></p>
-                    <label for="">What are you interested in:  </label><br><input type="text"><br>
-                    <p id="error-text"></p>
+                    <label for="">Email Address: </label><br><input type="email" placeholder="example@email.com" id="input-email" required><br>
+                    <p id="error-text2"></p>
+                    <label for="">What are you interested in:  </label><br>
+                    <select name="cars" class="option" id="option">
+                        <option value="select" id="select">Select option</option>
+                        <option value="bali">Bali</option>
+                        <option value="japan">Japan</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="korea">Korea</option>
+                    </select>
+                    <br>
+                    <p id="error-text3"></p>
                     <button id="send">Sumbit</button>
                 </section>
             </div>
@@ -44,21 +66,97 @@
         </section>
 
         <section>
-            <div>
+            <div class="profile2">
                 <p><i>"Liburanku menjadi menyenangkan bersama Travel Agentku"</i></p>
                 <section class="profile">
                     <img class="Florence" src="assets/Florence.jpg" alt="">
-                    <div>
+                    <div class="profile-name">
                         <p>Florence Hughes</p>
                         <p><i>Ibu Rumah Tangga, 28</i></p>
+                        <br>
+                        <hr>
                     </div>
                 </section>
             </div>
-            <div>
-                <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product.</p>
+            <br>
+            <div class="reason-main">
+                <p>Why do you have to use our travel agent?</p>
+                <div class="reason">
+                    <p class="num">1</p>
+                    <p class="reason-p">Our travel agent will give the <br> best value from other travel agencies.</p>
+                </div>
+                <div class="reason">
+                    <p class="num">2</p>
+                    <p class="reason-p">Our package consist of very knowledgeable tour guides <br> that will guide you all around the world.</p>
+                </div>
+                <div class="reason">
+                    <p class="num">3</p>
+                    <p class="reason-p">Our travel agent will give the best value from other travel agencies</p>
+                </div>
+                <br>
             </div>
         </section>
     </article>
+    <article>
+        <div id= "article" class="package">
+            <h1>Our Package</h1>
+        </div>
+        <section>
+            <section class="country">
+                <div class="bali">
+                    <h2>Bali</h2>
+                    <p>Tour and travel in Bali. <br> Visit multiple places and discover multiple culture.</p>
+                </div>
+                <div class="japan">
+                    <h2>Japan</h2>
+                    <p>Tour and travel in Japan. <br> Visit multiple places and discover multiple culture.</p>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+                <div>
+                    <h2>Singapore</h2>
+                    <p>Tour and travel in Singapore. <br> Visit multiple places and discover multiple culture.</p>
+                </div>
+            </section>
+            <section class="country2">
+                <div>
+                    <h2>Bandung</h2>
+                    <p>Tour and travel in Bandung. <br> Visit multiple places and discover multiple culture.</p>
+                </div>
+                <div>
+                    <h2>Surabaya</h2>
+                    <p>Tour and travel in Surabaya. <br> Visit multiple places and discover multiple culture.</p>
+                </div>
+                <div>
+                    <h2>Korea</h2>
+                    <p>Tour and travel in Korea. <br> Visit multiple places and discover multiple culture.</p>
+                </div>
+            </section>
+        </section>
+    </article>
+    <hr class="hr">
+    <footer>
+        <div id="foot" class="web-footer">
+            <h1>Need Help?</h1>
+            <p>Contact us for help or further information via telephone line</p>
+            <p>62-888-888</p>
+            <p>62-999-999</p>
+            <p>or the online form that we have prepared down below</p>
+            <button class="contact">Contact Us</button>
+        </div>
+        <hr>
+        <div class="last-footer">
+            <div class="logo-foot">Logo</div>
+            <div class="term">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy policy</a>
+            </div>
+            <div class="copyright">
+                <p>© 2019 Tour Travel</p>
+            </div>
+        </div>
+    </footer>
 <script src="js/script.js"></script>
 </body>
 </html>
