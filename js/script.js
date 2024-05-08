@@ -6,10 +6,10 @@ document.getElementById('send').addEventListener("click", function() {
     const nama =nameInput.value
 
     if (nama == "") {
-        document.getElementById('error-text').innerHTML = "Please enter your name"
+        document.getElementById('error-text').innerHTML = "Please enter your name."
     }
     else {
-        document.getElementById('error-text3').innerHTML = ""
+        document.getElementById('error-text1').innerHTML = ""
     }
 })
 
@@ -19,10 +19,23 @@ document.getElementById('send').addEventListener("click", function() {
     const option =optionInput.value
 
     if (option == "select") {
-        document.getElementById('error-text3').innerHTML = "Please select an option"
+        document.getElementById('error-text3').innerHTML = "Please select an option."
     }
     else {
         document.getElementById('error-text3').innerHTML = ""
+    }
+})
+
+let emailInput = document.getElementById('input-email')
+
+document.getElementById('send').addEventListener("click", function() {
+    const email =emailInput.value
+
+    if (email == "") {
+        document.getElementById('error-text2').innerHTML = "Please enter an email address."
+    }
+    else {
+        document.getElementById('error-text2').innerHTML = ""
     }
 })
 

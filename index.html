@@ -8,18 +8,18 @@
 </head>
 <body>
     <header class="Navigation">
-        <div>Logo</div>
-        <nav>
+        <div class="logo1"><img src="assets/Logo.jpg" alt="" class="logo1"></div>
+        <nav class="navigate">
             <button onclick="scrollToSection('home')">Home</button>
             <button onclick="scrollToSection('article')">Our Package</button>
             <button onclick="scrollToSection('foot')">Call Us</button>
         </nav>
     </header>
-    <hr/>
+    <hr>
     
     <article id= "home" class="Word">
         <header>
-            <h1>Your Very Trusted Travel Agent</h1>
+            <h1>Your Very Trusted Travel Agent's</h1>
             <p>Your happiness is our happiness</p>
         </header>
 
@@ -46,32 +46,33 @@
                 <section class="item-input">
                     <label for="">Your Name: </label><br><input type="text" placeholder="First and Last Name" id="input-name"><br>
                     <p id="error-text"></p>
-                    <label for="">Email Address: </label><br><input type="email" placeholder="example@email.com" id="input-email" required><br>
+                    <label for="">Email Address: </label><br><input type="email" placeholder="example@email.com" id="input-email"><br>
                     <p id="error-text2"></p>
                     <label for="">What are you interested in:  </label><br>
                     <select name="cars" class="option" id="option">
                         <option value="select" id="select">Select option</option>
                         <option value="bali">Bali</option>
-                        <option value="japan">Japan</option>
+                        <option value="japan">Japan</option>                        
                         <option value="singapore">Singapore</option>
+                        <option value="bandung">Bandung</option>
                         <option value="surabaya">Surabaya</option>
                         <option value="korea">Korea</option>
                     </select>
                     <br>
                     <p id="error-text3"></p>
-                    <button id="send">Sumbit</button>
+                    <button id="send">Submit</button>
                 </section>
             </div>
             
         </section>
 
-        <section>
+        <section class="benefits">
             <div class="profile2">
                 <p><i>"Liburanku menjadi menyenangkan bersama Travel Agentku"</i></p>
                 <section class="profile">
                     <img class="Florence" src="assets/Florence.jpg" alt="">
                     <div class="profile-name">
-                        <p>Florence Hughes</p>
+                        <p><b>Florence Hughes</b></p>
                         <p><i>Ibu Rumah Tangga, 28</i></p>
                         <br>
                         <hr>
@@ -91,12 +92,13 @@
                 </div>
                 <div class="reason">
                     <p class="num">3</p>
-                    <p class="reason-p">Our travel agent will give the best value from other travel agencies</p>
+                    <p class="reason-p">Our travel agent will give the <br> best value from other travel agencies</p>
                 </div>
                 <br>
             </div>
         </section>
     </article>
+
     <article>
         <div id= "article" class="package">
             <h1>Our Package</h1>
@@ -110,9 +112,9 @@
                 <div class="japan">
                     <h2>Japan</h2>
                     <p>Tour and travel in Japan. <br> Visit multiple places and discover multiple culture.</p>
-                    <br>
-                    <br>
-                    <hr>
+                    <br class="japan-hr">
+                    <br class="japan-hr">
+                    <hr class="japan-hr">
                 </div>
                 <div>
                     <h2>Singapore</h2>
@@ -143,11 +145,11 @@
             <p>62-888-888</p>
             <p>62-999-999</p>
             <p>or the online form that we have prepared down below</p>
-            <button class="contact">Contact Us</button>
+            <button class="contact"><b>CALL TO ACTION</b></button>
         </div>
         <hr>
         <div class="last-footer">
-            <div class="logo-foot">Logo</div>
+            <div class="logo-foot"><img src="assets/Logo.jpg" alt=""></div>
             <div class="term">
                 <a href="">Terms of Service</a>
                 <a href="">Privacy policy</a>

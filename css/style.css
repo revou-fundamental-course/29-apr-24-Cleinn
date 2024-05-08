@@ -7,6 +7,14 @@
     padding-bottom: 16px;
 }
 
+.navigate {
+    margin-top: 10px;
+}
+
+.logo1 {
+    height: 50px;
+}
+
 .Navigation>nav>button {
     height: 32px;
     width: 100px;
@@ -15,6 +23,7 @@
     transition-duration: 0.4s;
     cursor: pointer;
     float: left;
+    font-family: 'Franklin Gothic Medium';
 }
 
 .Navigation>nav>button:after {
@@ -45,9 +54,19 @@
     background-color: rgb(58, 58, 58);
 }
 
-.Word>header {
+.Word>header>h1 {
     text-align: center;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.Word>header>p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+
 }
 
 .Items {
@@ -61,7 +80,6 @@
     margin: 19px;
     margin-right: 130px;
     margin-left: 200px;
-    background-color: #e0e2eb;
     border-radius: 8px;
 }
 
@@ -117,6 +135,7 @@ img.displaySlide{
     margin-right: 196px;
     background-color: #e0e2eb;
     border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .item-head {
@@ -153,6 +172,26 @@ img.displaySlide{
 
 #send {
     margin-left: 50px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    background-color: #070f30;
+    font-family: math;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #070f30;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+#send:hover {
+    background-color: white;
+    color: #070f30;
+}
+
+#send:active {
+    background-color: #e0e2eb;
 }
 
 .option {
@@ -169,6 +208,7 @@ img.displaySlide{
 
 .profile2 {
     margin-left: 300px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Florence {
@@ -180,7 +220,8 @@ img.displaySlide{
 .profile-name {
     font-size: 14px;
     margin-left: 15px;
-    line-height: 8px;
+    line-height: 6px;
+    
 }
 
 .reason {
@@ -197,12 +238,13 @@ img.displaySlide{
 }
 
 .reason-p {
-    line-height: 25px;
+    line-height: 21px;
     margin-left: 10px;
 }
 
 .reason-main {
     margin-left: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .package {
@@ -212,6 +254,15 @@ img.displaySlide{
     background-color: #e3e5f098;
     width: 100%;
     margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.country>div>h2, .country2>div>h2 {
+    font-size: 30px;
+}
+
+.country>div>p, .country2>div>p {
+    font-size: 18px;
 }
 
 .country {
@@ -231,8 +282,13 @@ img.displaySlide{
     margin-bottom: 50px;
 }
 
+.country2>div {
+    margin-bottom: 50px;
+}
+
 .web-footer {
     text-align: center;
+    font-size: 130%;
 }
 
 .hr {
@@ -244,18 +300,68 @@ img.displaySlide{
 }
 
 .contact {
-    margin-bottom: 40px;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: #070f30;
+    font-family: math;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #070f30;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.contact:hover {
+    background-color: white;
+    color: #070f30;
+}
+
+.contact:active {
+    background-color: #e0e2eb;
 }
 
 .copyright {
     line-height: 0px;
 }
 
-.logo-foot {
+.logo-foot>img {
     margin-bottom: 5px;
+    height: 100px;
 }
 
 .last-footer {
     margin: 30px;   
 }
 
+@media only screen and (max-width: 480px) {
+    .Items {
+        display: block;
+    }
+
+    .item-core{
+        height: 200px;
+        width: 415px;
+        margin: auto;
+    }
+
+    .slider {
+        height: 100%;
+        width: 100%;
+    }
+
+    .item-core2 {
+        margin: 0px;
+    }
+
+    .benefits>div {
+        margin: 0px;
+    }
+
+    .japan-hr {
+        display: none;
+    }
+}
