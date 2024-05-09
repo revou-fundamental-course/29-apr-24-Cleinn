@@ -9,7 +9,7 @@ document.getElementById('send').addEventListener("click", function() {
         document.getElementById('error-text').innerHTML = "Please enter your name."
     }
     else {
-        document.getElementById('error-text1').innerHTML = ""
+        document.getElementById('error-text').innerHTML = ""
     }
 })
 
