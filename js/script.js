@@ -1,4 +1,4 @@
-//Entering value to username and option
+//Validation to username, email and option
 
 let nameInput = document.getElementById('input-name')
 
